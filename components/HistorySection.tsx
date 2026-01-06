@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { HISTORICAL_SYSTEMS } from '../constants';
+import { HISTORICAL_SYSTEMS } from '../constants.tsx';
 
 const HistorySection: React.FC = () => {
   const [selectedId, setSelectedId] = useState(HISTORICAL_SYSTEMS[0].id);

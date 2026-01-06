@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import { Section } from './types';
-import HistorySection from './components/HistorySection';
-import PlaceValueChart from './components/PlaceValueChart';
-import CompositionTool from './components/CompositionTool';
-import Quiz from './components/Quiz';
+import { Section } from './types.ts';
+import HistorySection from './components/HistorySection.tsx';
+import PlaceValueChart from './components/PlaceValueChart.tsx';
+import CompositionTool from './components/CompositionTool.tsx';
+import Quiz from './components/Quiz.tsx';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>(Section.History);

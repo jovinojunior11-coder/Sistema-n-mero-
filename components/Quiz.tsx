@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { QUIZ_QUESTIONS } from '../constants';
-import { QuizQuestion } from '../types';
+import { QUIZ_QUESTIONS } from '../constants.tsx';
+import { QuizQuestion } from '../types.ts';
 
 const Quiz: React.FC = () => {
   const [localQuestions, setLocalQuestions] = useState<QuizQuestion[]>(QUIZ_QUESTIONS);
