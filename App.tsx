@@ -22,7 +22,7 @@ const App: React.FC = () => {
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch((e) => {
-        console.error(`Error attempting to enable full-screen mode: ${e.message}`);
+        console.error(`Erro ao tentar ativar tela cheia: ${e.message}`);
       });
     } else {
       if (document.exitFullscreen) {
@@ -55,7 +55,6 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
-      {/* Header */}
       <header className="bg-indigo-600 text-white p-6 shadow-lg">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center space-x-3">
@@ -90,7 +89,6 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Navigation */}
       <nav className="bg-white border-b sticky top-0 z-10 shadow-sm overflow-x-auto">
         <div className="container mx-auto flex justify-center py-2 px-4 space-x-2">
           {navItems.map((item) => (
@@ -109,14 +107,12 @@ const App: React.FC = () => {
         </div>
       </nav>
 
-      {/* Main Content */}
       <main className="flex-grow container mx-auto p-4 md:p-8">
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden min-h-[600px] border border-gray-100">
           {renderSection()}
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="bg-gray-100 border-t py-6 text-center text-gray-500 text-sm">
         <p>© 2024 Portal Educativo - Sistema de Numeração Interativo</p>
       </footer>
