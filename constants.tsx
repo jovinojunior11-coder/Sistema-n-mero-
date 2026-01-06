@@ -16,9 +16,9 @@ export const HISTORICAL_SYSTEMS: HistoricalSystem[] = [
     name: 'Egípcio',
     description: 'Sistema não posicional baseado em hieróglifos.',
     symbols: [
-      { val: 1, char: '𓏽', svg: 'Bastão' },
-      { val: 10, char: '𓎆', svg: 'Ferradura' },
-      { val: 100, char: '𓍢', svg: 'Rolo de Corda' }
+      { val: 1, char: 'Bastão', svg: 'Bastão' },
+      { val: 10, char: 'Ferradura', svg: 'Ferradura' },
+      { val: 100, char: 'Rolo de Corda', svg: 'Rolo de Corda' }
     ]
   },
   {
@@ -36,7 +36,7 @@ export const HISTORICAL_SYSTEMS: HistoricalSystem[] = [
   {
     id: 'indo_arabic',
     name: 'Indo-Arábico',
-    description: 'O sistema que usamos hoje. É decimal (base 10) e posicional.',
+    description: 'O sistema que usamos hoje. É decimal e posicional.',
     symbols: [
       { val: 0, char: '0' },
       { val: 1, char: '1' },
@@ -56,5 +56,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   { id: 7, question: "A quarta ordem pertence à classe dos milhares.", correctAnswer: true },
   { id: 8, question: "A dezena é a terceira ordem das unidades simples.", correctAnswer: false },
   { id: 9, question: "No número 542, o algarismo 5 ocupa a ordem das centenas.", correctAnswer: true },
-  { id: 10, question: "Dez unidades de milhar formam uma dezena de milhar.", correctAnswer: true }
+  { id: 10, question: "Dez unidades de milhar formam uma dezena de milhar.", correctAnswer: true },
+  { id: 11, question: "O algarismo zero não ocupa nenhuma ordem no sistema decimal.", correctAnswer: false },
+  { id: 12, question: "A sétima ordem inicia a classe dos milhões.", correctAnswer: true }
 ];
